@@ -28,3 +28,5 @@ jobs:
         cache: 'npm'
     - name: Set envoiriment
       run: export NODE_ENV=development && echo $NODE_ENV
+    - name: Show envoiriment
+      run: echo ${{ secrets.ENV_FILE }}
