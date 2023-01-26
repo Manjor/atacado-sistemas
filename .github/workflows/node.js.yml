@@ -28,8 +28,6 @@ jobs:
         cache: 'npm'
     - name: Set envoiriment
       run: export NODE_ENV=development && echo $NODE_ENV
-    - name: TEsting generate env
-      env:
-        TEST_ENV: ${{secrets.KEY_TEST}}
-      run: echo "$TEST_ENV"
+    - name: Show ${{vars.VAR_TEST}}
+      run: echo "Olá só"
       
