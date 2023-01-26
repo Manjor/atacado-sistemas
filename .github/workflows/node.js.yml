@@ -31,5 +31,5 @@ jobs:
     - name: TEsting generate env
       env:
         TEST_ENV: ${{secrets.KEY_TEST}}
-      run: touch .env
+      run: echo "$env:KEY_TEST
       
