@@ -27,8 +27,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Set envoiriment
-      run: export NODE_ENV=development && echo $NODE_ENV
-    env:
-      TESTANDO: Mona
-      TESTANDO2: totally_awesome
-      run: echo "Hi ${{ env.TESTANDO }}"
+      run: echo "${{vars.VAR_TEST}}"
