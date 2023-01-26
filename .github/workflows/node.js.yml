@@ -31,6 +31,5 @@ jobs:
     - name: TEsting generate env
       env:
         TEST_ENV: ${{secrets.KEY_TEST}}
-    - name: Show env file
       run: touch .env
       
