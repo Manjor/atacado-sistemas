@@ -28,5 +28,9 @@ jobs:
         cache: 'npm'
     - name: Set envoiriment
       run: export NODE_ENV=development && echo $NODE_ENV
-    - name: Show envoiriment
-      run: echo ${{ secrets.ENV_FILE }}
+    - name: TEsting generate env
+      env:
+        TEST_ENV: ${{secrets.KEY_TEST}}
+    - name: Show .env file
+      run: touch .env
+      
