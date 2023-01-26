@@ -28,6 +28,7 @@ jobs:
         cache: 'npm'
     - name: Set envoiriment
       run: export NODE_ENV=development && echo $NODE_ENV
-    - name: Show ${{vars.VAR_TEST}}
-      run: echo "Olá só"
-      
+    env:
+      TESTANDO: Mona
+      TESTANDO2: totally_awesome
+      run: echo 'Hi ${{ env.TESTANDO }}'
